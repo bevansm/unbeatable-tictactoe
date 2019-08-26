@@ -1,0 +1,216 @@
+/*  -------------------
+           Text
+    -------------------  */
+* p {
+  color: white;
+  text-align: center;
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.btn,
+.menu-choice * {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/*  -------------------
+           Grid
+    -------------------  */
+.row {
+  width: 100%;
+}
+
+/*  -------------------
+          Buttons
+    -------------------  */
+.btn {
+  cursor: pointer;
+  background-color: white;
+  color: #ed595c;
+  border: 2px solid #ed595c;
+  border-radius: 5%;
+  text-align: center;
+}
+
+.btn:hover:enabled,
+.btn:focus:enabled {
+  outline: none;
+}
+
+.btn:hover:enabled,
+.sym-btn:focus:enabled {
+  background-color: #ed595c;
+  color: white;
+  border-color: white;
+}
+
+.btn:hover:enabled {
+  font-weight: bold;
+}
+
+/*  -------------------
+     Tic-Tac-Toe Board
+    -------------------  */
+.game-wrapper {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+.board td,
+.btn-box {
+  width: 130px;
+  height: 130px;
+}
+
+.game-wrapper * {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+}
+
+.board {
+  border: 5px solid #ed595c;
+  background-color: #ed595c;
+  border-radius: 5%;
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.btn-box {
+  display: block;
+  font-size: 100px;
+}
+
+/*  -------------------
+           Menu
+    -------------------  */
+
+.menu {
+  border: 3px solid white;
+  border-radius: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 75%;
+  width: 75%;
+
+  background-color: #ed595c;
+  opacity: 1;
+
+  text-align: center;
+}
+
+.menu > * {
+  display: block;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+.menu-text {
+  color: white;
+  width: 100%;
+}
+
+.menu-choice {
+  height: 20%;
+  text-align: center;
+}
+
+.menu-choice,
+.menu-choice * {
+  cursor: pointer;
+}
+
+.menu .btn {
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/*  -------------------
+     Menu Radio Buttons
+    -------------------  */
+
+.menu-choice label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  height: 100%;
+  width: 25%;
+
+  background-color: white;
+  border: 2px solid #ed595c;
+  border-radius: 5%;
+  color: #ed595c;
+
+  vertical-align: middle;
+}
+
+.menu-choice label:hover {
+  font-weight: bold;
+}
+
+.menu-choice input:checked + label,
+.menu-choice label:hover {
+  background-color: #ed595c;
+  border-color: white;
+  color: white;
+}
+
+.menu-choice input:not(:checked, :hover) + label {
+  background-color: white;
+  border-color: #ed595c;
+  color: #ed595c;
+}
+
+.menu-choice input {
+  display: none;
+}
+
+/*  -------------------
+        Bottom Bar
+    -------------------  */
+
+.player-bar {
+  display: block;
+  height: 50px;
+  width: 75%;
+  background-color: #ed595c;
+  margin-top: 5px;
+  border-collapse: collapse;
+  border: 2px solid white;
+  border-radius: 5%;
+
+  position: absolute;
+  left: 50%;
+  top: 101%;
+  transform: translate(-50%, 3px);
+}
+
+.player-bar * {
+  width: 100%;
+}
+
+/*  -------------------
+         Signature
+    -------------------  */
+
+.smalltext {
+  width: 100%;
+
+  font-size: 0.6em;
+  color: #ed595c;
+
+  position: absolute;
+  top: 115%;
+}

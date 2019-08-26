@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="stylesheets/style.css" />
+  </head>
+
+  <body>
+    <section class="game-wrapper">
+      <section class="menu" id="menu">
+        <div class="menu-text">
+          <p id="msg-menu">__</p>
+          <p id="msg-sym">player one, choose your symbol</p>
+        </div>
+
+        <div class="menu-choice">
+          <input type="radio" name="sym-choice" id="choice-sym-one" checked />
+          <label id="sym-one" for="choice-sym-one"> </label>
+          <input type="radio" name="sym-choice" id="choice-sym-two" />
+          <label id="sym-two" for="choice-sym-two"> </label>
+        </div>
+
+        <div class="menu-text">
+          <p>ai or two players?</p>
+        </div>
+
+        <div class="menu-choice">
+          <input type="radio" name="player-choice" id="choice-ai" checked />
+          <label for="choice-ai">
+            ai
+          </label>
+          <input type="radio" name="player-choice" id="choice-two-player" />
+          <label for="choice-two-player">
+            two player
+          </label>
+        </div>
+
+        <button class="btn" id="btn-start" onclick="newGame()">
+          Start
+        </button>
+      </section>
+
+      <table class="board">
+        <tr class="row">
+          <td>
+            <button
+              class="btn btn-box"
+              id="0"
+              disabled
+              onclick="boxClicked()"
+              onmouseover="boxHovered()"
+              onmouseout="boxNotHovered()"
+            >
+              X
+            </button>
+          </td>
+          <td>
+            <button
+              class="btn btn-box"
+              id="1"
+              disabled
+              onclick="boxClicked()"
+              onmouseover="boxHovered()"
+              onmouseout="boxNotHovered()"
+            ></button>
+          </td>
+          <td>
+            <button
+              class="btn btn-box"
+              id="2"
+              disabled
+              onclick="boxClicked()"
+              onmouseover="boxHovered()"
+              onmouseout="boxNotHovered()"
+            >
+              X
+            </button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button
+              class="btn btn-box"
+              id="3"
+              disabled
+              onclick="boxClicked()"
+              onmouseover="boxHovered()"
+              onmouseout="boxNotHovered()"
+            ></button>
+          </td>
+          <td>
+            <button
+              class="btn btn-box"
+              id="4"
+              disabled
+              onclick="boxClicked()"
+              onmouseover="boxHovered()"
+              onmouseout="boxNotHovered()"
+            >
+              X
+            </button>
+          </td>
+          <td>
+            <button
+              class="btn btn-box"
+              id="5"
+              disabled
+              onclick="boxClicked()"
+              onmouseover="boxHovered()"
+              onmouseout="boxNotHovered()"
+            ></button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button
+              class="btn btn-box"
+              id="6"
+              disabled
+              onclick="boxClicked()"
+              onmouseover="boxHovered()"
+              onmouseout="boxNotHovered()"
+            >
+              X
+            </button>
+          </td>
+          <td>
+            <button
+              class="btn btn-box"
+              id="7"
+              disabled
+              onclick="boxClicked()"
+              onmouseover="boxHovered()"
+              onmouseout="boxNotHovered()"
+            ></button>
+          </td>
+          <td>
+            <button
+              class="btn btn-box"
+              id="8"
+              disabled
+              onclick="boxClicked()"
+              onmouseover="boxHovered()"
+              onmouseout="boxNotHovered()"
+            >
+              X
+            </button>
+          </td>
+        </tr>
+      </table>
+
+      <div class="player-bar">
+        <p id="player-bar-text"></p>
+      </div>
+
+      <script src="script.js"></script>
+
+      <section>
+        <p class="smalltext">@maja evans, 2019</p>
+      </section>
+    </section>
+  </body>
+</html>
